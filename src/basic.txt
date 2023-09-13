@@ -1,0 +1,58 @@
+// let age:number | string;   // for both of type data can be store in age
+
+// age = "Hello"
+// let name: String;
+// let isStudent: boolean;
+// let hobbies: string[];
+// let role: [number, string];
+let personName: unknown; 
+
+let printNumber: (name:string) => never
+// let printNumber: (name:string) => void
+
+
+// type Person = {
+//   name: string;
+//   age?: number;     // optional
+// };
+
+// let person: Person = {
+//   name: "Ali"
+// } 
+// function printNumber(name:string){
+//   console.log(name);
+  
+// }
+
+// printNumber("Mateen")
+
+// How extand type
+type X = {
+  a: string;
+  b: number;
+};
+// type Y = X & {          // for if we want to X is also part of Y
+type Y = {
+  c: string;
+  d: number;
+};
+
+let y: Y = {
+  c: "mateem",
+  d: 344
+
+}
+
+
+// How extand interface we can also extand type in interface and vise versa
+
+
+interface Person{
+  name: string;
+};
+interface Guy extends Person {
+  Fname: string;
+};
+
+
+
